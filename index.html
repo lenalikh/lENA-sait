@@ -1,0 +1,118 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>40 000 композиций – доставка цветов</title>
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- ШАПКА + НАВИГАЦИЯ -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">40 000 композиций</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Избранное</a></li>
+                    <li><a href="#">Корзина</a></li>
+                </ul>
+                <!-- Бургер-меню (для мобильных) -->
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ПРИВЕТСТВИЕ + КНОПКА -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Свежие цветы с доставкой</h1>
+                <p>Более 40 000 композиций для любых событий</p>
+                <button class="btn primary-btn" id="orderBtn">Заказать букет</button>
+            </div>
+        </section>
+
+        <!-- КАТАЛОГ (3 букета) -->
+        <section class="catalog">
+            <div class="container">
+                <h2>Наши букеты</h2>
+                <div class="catalog-grid">
+                    <!-- Букет 1 -->
+                    <div class="card">
+                        <img src="https://tsvet-ok.ru/wp-content/uploads/2022/09/IMG_9602.jpg" alt="Верная траектория" />
+                        <h3>Верная траектория</h3>
+                        <p class="price">2 500 ₽</p>
+                    </div>
+                    <!-- Букет 2 -->
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcuhi2mBrvFymF4gR6NDrxWqTM5w3_6WEDnA&s" alt="Летняя композиция" />
+                        <h3>Летняя композиция</h3>
+                        <p class="price">3 200 ₽</p>
+                    </div>
+                    <!-- Букет 3 -->
+                    <div class="card">
+                        <img src="https://img.buket159.ru/r/x3ovxHEnSAI/rs:fit:1000:0:1/q:100/plain/images/products/1/2393/2608294233/DSCF5068_1000.jpg@jpg" alt="АУДИтор" />
+                        <h3>АУДИтор</h3>
+                        <p class="price">4 100 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПОЧЕМУ ВЫБИРАЮТ НАС -->
+        <section class="advantages">
+            <div class="container">
+                <h2>Почему выбирают нас</h2>
+                <div class="adv-grid">
+                    <div class="adv-item">
+                        <span class="adv-icon">🌿</span>
+                        <h3>Только свежие цветы</h3>
+                        <p>Срезаны не более 24 часов назад</p>
+                    </div>
+                    <div class="adv-item">
+                        <span class="adv-icon">🚚</span>
+                        <h3>Бесплатная доставка</h3>
+                        <p>По городу при заказе от 2 000 ₽</p>
+                    </div>
+                    <div class="adv-item">
+                        <span class="adv-icon">💐</span>
+                        <h3>40 000 композиций</h3>
+                        <p>Огромный выбор на любой вкус</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- КОНТАКТЫ (включая телефон) -->
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h2>Контакты</h2>
+                <div class="contacts-info">
+                    <p><span>📞</span> +7 (999) 123-45-67</p>
+                    <p><span>✉️</span> flower@40k.ru</p>
+                    <p><span>📍</span> ул. Цветочная, д. 7, Москва</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <div class="container footer-container">
+            <p>© 2026 «40 000 композиций» — доставка цветов</p>
+            <p class="footer-phone">📞 +7 (999) 123-45-67</p>
+        </div>
+    </footer>
+
+    <!-- Подключаем JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

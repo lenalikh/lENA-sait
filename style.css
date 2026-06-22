@@ -1,0 +1,340 @@
+/* style.css – зелёные оттенки, адаптив */
+
+/* Общие сбросы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+    background: #f5faf5;
+    color: #1e3a2f;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ШАПКА */
+header {
+    background: #1e4a3a;
+    color: #f0fcf0;
+    padding: 16px 0;
+    box-shadow: 0 4px 10px rgba(0, 40, 20, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #d4edc9;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 1.8rem;
+}
+
+.nav-menu a {
+    color: #e2f3da;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    font-size: 1rem;
+}
+
+.nav-menu a:hover {
+    color: #b8e0a8;
+}
+
+/* Бургер (скрыт на десктопе) */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.burger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: #d4edc9;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* ГЕРОЙ */
+.hero {
+    background: linear-gradient(145deg, #e2f3da, #c0dfb0);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 0 0 40px 40px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    color: #123b2a;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #1e4a3a;
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 60px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: #1e6b4c;
+    color: #f5fff5;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 6px 16px rgba(30, 107, 76, 0.3);
+}
+
+.btn:hover {
+    background: #155a3e;
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(30, 107, 76, 0.4);
+}
+
+/* КАТАЛОГ */
+.catalog {
+    padding: 30px 0 50px;
+}
+
+.catalog h2,
+.advantages h2,
+.contacts h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1a4a34;
+    letter-spacing: 1px;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fafff9;
+    border-radius: 24px;
+    padding: 16px 16px 24px;
+    box-shadow: 0 8px 24px rgba(30, 70, 40, 0.08);
+    transition: 0.25s;
+    text-align: center;
+    border: 1px solid #cfead0;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(30, 90, 50, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 16px;
+    background: #daeed5;
+}
+
+.card h3 {
+    margin: 16px 0 6px;
+    font-size: 1.3rem;
+    color: #1d523b;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1f7a4a;
+    background: #e5f5e0;
+    display: inline-block;
+    padding: 4px 18px;
+    border-radius: 40px;
+}
+
+/* ПРЕИМУЩЕСТВА */
+.advantages {
+    background: #eaf5e5;
+    padding: 50px 0;
+    margin: 20px 0;
+}
+
+.adv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.adv-item {
+    background: #f9fdf8;
+    padding: 28px 16px;
+    border-radius: 32px;
+    box-shadow: 0 4px 12px rgba(40, 90, 50, 0.06);
+}
+
+.adv-icon {
+    font-size: 2.8rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.adv-item h3 {
+    color: #1b543b;
+    margin-bottom: 6px;
+}
+
+.adv-item p {
+    color: #2f5f45;
+    font-size: 0.98rem;
+}
+
+/* КОНТАКТЫ */
+.contacts {
+    padding: 40px 0 30px;
+}
+
+.contacts-info {
+    background: #f0f9ec;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 24px 30px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    border: 1px solid #c5e0c0;
+}
+
+.contacts-info p {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contacts-info span {
+    font-size: 1.6rem;
+}
+
+/* ПОДВАЛ */
+footer {
+    background: #143a2b;
+    color: #d7edce;
+    padding: 24px 0;
+    margin-top: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-phone {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* ----- АДАПТИВ (мобильные) ----- */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: #1e4a3a;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        gap: 1.2rem;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(0, 20, 10, 0.3);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        padding: 12px 32px;
+        font-size: 1rem;
+    }
+
+    .catalog-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .adv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacts-info {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
